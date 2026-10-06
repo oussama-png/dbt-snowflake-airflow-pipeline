@@ -1,0 +1,13 @@
+
+target/
+dbt_packages/
+logs/
+.env
+
+# Python
+__pycache__/
+*.pyc
+venv/
+
+# Identifiants Snowflake : ne jamais versionner le vrai profiles.yml
+profiles.yml

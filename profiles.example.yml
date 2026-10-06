@@ -1,0 +1,14 @@
+# Copier ce fichier dans ~/.dbt/profiles.yml et remplacer les valeurs entre <>.
+mon_projet:
+  target: dev
+  outputs:
+    dev:
+      type: snowflake
+      account: <identifiant_compte>.<region>   # ex. ab12345.eu_west_3.aws
+      user: dbt_user
+      password: <mot_de_passe>
+      role: ACCOUNTADMIN
+      warehouse: finance_wh
+      database: finance_db
+      schema: raw
+      threads: 4
